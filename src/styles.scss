@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+$dark: #0B0D17;
+$blue: #D0D6F9;
+$light: #FFF;
+
+$fontTitles: 'Bellefair', serif;
+$fontText: 'Barlow Condensed', sans-serif;
+
+body {
+  font-family: $fontText;
+}
+
+h1 {
+  font-family: $fontTitles;
+  font-size: 150px;
+}
+h2 {
+  font-family: $fontTitles;
+  font-size: 150px;
+}
+h3 {
+  font-family: $fontTitles;
+  font-size: 56px;
+}
+h4 {
+  font-family: $fontTitles;
+  font-size: 32px;
+}
+h5 {
+  font-family: $fontText;
+  font-size: 28px;
+  letter-spacing: 4.75px;
+}
+
+@mixin subheading1 {
+  font-family: $fontTitles;
+  font-size: 28px;
+}
+@mixin subheading2 {
+  font-family: $fontText;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+@mixin navText {
+  font-family: $fontText;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
