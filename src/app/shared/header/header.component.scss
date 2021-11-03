@@ -1,0 +1,57 @@
+@import '../../../styles';
+
+header {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.headerLine {
+  width: 33%;
+  height: 1px;
+  margin: 0 40px;
+  background: $light;
+  opacity: 25%;
+  z-index: 2;
+}
+
+nav {
+  flex-grow: 1;
+  padding: 0 35px;
+  position: relative;
+  z-index: 1;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      line-height: 92px;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      @include navText;
+      span {
+        margin-right: 8px;
+        font-weight: bold;
+      }
+
+      &:active {
+        border-bottom: 2px solid $light;
+      }
+      &:hover {
+        border-bottom: 2px solid $hover;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.04);
+    position: absolute;
+    inset: 0 0 0 -10%;
+    z-index: -1;
+  }
+}
