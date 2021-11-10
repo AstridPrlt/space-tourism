@@ -2,6 +2,7 @@
 
 header {
   width: 100%;
+  position: absolute;
   padding-top: 40px;
   padding-left: 55px;
   display: flex;
@@ -15,6 +16,10 @@ header {
   background: $light;
   opacity: 25%;
   z-index: 2;
+}
+
+input {
+  display: none;
 }
 
 .menuBtn {
@@ -146,7 +151,7 @@ nav {
   input:checked ~ nav {
     display: initial;
     width: 60%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
