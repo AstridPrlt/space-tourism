@@ -47,11 +47,12 @@ nav {
         font-weight: bold;
       }
 
-      &:active {
-        border-bottom: 2px solid $light;
-      }
       &:hover {
         border-bottom: 2px solid $hover;
+      }
+
+      &.router-link-active {
+        border-bottom: 2px solid $light;
       }
     }
   }
@@ -65,6 +66,7 @@ nav {
     z-index: -1;
   }
 }
+
 
 //for tablets
 @media screen and (max-width: 1023px) {
