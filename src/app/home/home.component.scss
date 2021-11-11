@@ -15,8 +15,7 @@
 }
 
 .homeText {
-  width: 38%;
-  min-width: 450px;
+  width: clamp(450px, 38%, 800px);
 }
 .homeText h1 {
   line-height: 172px;
@@ -59,10 +58,38 @@
 //for tablets
 @media screen and (max-width: 1023px) {
   .home{
+    height: clamp(1024px, 100vh, 3000px);
     background: url(../../assets/images/home/background-home-tablet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(180px, 26vw, 200px) 0 90px;
+  }
+
+  .homeText {
+    text-align: center;
+  }
+
+  .homeText h1 {
+    line-height: 150px;
+  }
+  .homeText h5 {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    line-height: 24px;
+  }
+  .homeText p {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 3px;
+  }
+
+  #exploreBtn {
+    width: 32vw;
+    height: 32vw;
   }
 }
 
@@ -71,10 +98,38 @@
 @media screen and (max-width: 650px) {
   .home {
     width: 100vw;
-    height: 100%;
+    height: clamp(676px, 100vh, 3000px);
     background: url(../../assets/images/home/background-home-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+
+    padding: clamp(120px, 30vw, 150px) 0 clamp(48px, 13vmax, 100px);
+  }
+
+  .homeText {
+    width: clamp(230px, 87vw, 400px);
+  }
+  .homeText h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .homeText h5 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    line-height: 19.2px;
+  }
+  .homeText p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #exploreBtn {
+    width: 150px;
+    height: 150px;
+
+    font-size: 20px;
+    line-height: 22.92px;
+    letter-spacing: 1.25px;
   }
 }
