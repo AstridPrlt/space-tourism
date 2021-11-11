@@ -11,11 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 165px 130px;
+  padding: 0 11.5vw 15vh;
 }
 
 .homeText {
   width: 38%;
+  min-width: 450px;
 }
 .homeText h1 {
   line-height: 172px;
@@ -31,28 +32,32 @@
   line-height: 32px;
 }
 
-.exploreBtnPart {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
 #exploreBtn {
   display: block;
-  width: 274px;
-  height: 274px;
+  width: clamp(230px, 19vw, 300px);
+  height: clamp(230px, 19vw, 300px);
   border-radius: 50%;
+  cursor: pointer;
 
   font-family: $fontTitles;
   font-weight: normal;
   font-size: 32px;
   letter-spacing: 2px;
   color: $dark;
+  border: none;
 
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  transition: box-shadow 1s;
+
+  &:hover {
+    box-shadow: 0 0 0 6vw rgba(255, 255, 255, 0.1);
+  }
 }
 
 
+
 //for tablets
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .home{
     background: url(../../assets/images/home/background-home-tablet.jpg);
     background-size: cover;
