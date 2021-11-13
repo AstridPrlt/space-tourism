@@ -6,4 +6,39 @@
   background: url(../../assets/images/destination/background-destination-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  padding: 24% 12% 18%;
+}
+
+.destination h5 {
+  position: absolute;
+  top: 23%;
+  left: 11.5%;
+
+  & span {
+    opacity: 0.25;
+    margin-right: 28px;
+  }
+}
+
+.mat-tab-label {
+  @include navText;
+  color: $blue;
+  line-height: 19.2px;
+  margin-right: 36px;
+  padding: 0 !important;
+  min-width: 0 !important;
+  &:hover {
+    border-bottom: 3px solid $hover;
+  }
+}
+
+.mat-tab-label-active {
+  color: $light;
+  &:hover {
+    border-bottom: none;
+  }
+}
+.mat-ink-bar {
+  background-color: $light !important;
 }
