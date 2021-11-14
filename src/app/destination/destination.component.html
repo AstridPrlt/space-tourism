@@ -2,12 +2,28 @@
 
   <h5><span>01</span>pick your destination</h5>
 
+  <mat-tab-group mat-align-tabs="start" animationDuration="0ms">
+    <mat-tab *ngFor="let item of DestinationItems">
+      <ng-template mat-tab-label>{{item.name}}</ng-template>
 
-  <mat-tab-group mat-align-tabs="start">
-    <mat-tab label="MOON"></mat-tab>
-    <mat-tab label="MARS"></mat-tab>
-    <mat-tab label="EUROPA"></mat-tab>
-    <mat-tab label="TITAN"></mat-tab>
+      <img class="destinationImage" [src]="item.images" alt="">
+
+      <div class="destinationText">
+        <h2>{{item.name}}</h2>
+        <p class="description">{{item.description}}</p>
+        <div class="details">
+          <div class="distance">
+            <h6>AVG. DISTANCE</h6>
+            <p class="detailsItem">{{item.distance}}</p>
+          </div>
+          <div class="travelTime">
+            <h6>EST. TRAVEL TIME</h6>
+            <p class="detailsItem">{{item.travel}}</p>
+          </div>
+        </div>
+      </div>
+
+      </mat-tab>
   </mat-tab-group>
 
 </div>

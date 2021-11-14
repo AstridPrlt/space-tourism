@@ -2,17 +2,15 @@
 
 .destination {
   width: 100%;
-  height: 100vh;
+  height: clamp(750px, 100vh, 3000px);
   background: url(../../assets/images/destination/background-destination-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
-  padding: 24% 12% 18%;
 }
 
 .destination h5 {
   position: absolute;
-  top: 23%;
+  top: clamp(180px, 23vh, 400px);
   left: 11.5%;
 
   & span {
@@ -21,10 +19,23 @@
   }
 }
 
+.mat-tab-group {
+  position: absolute;
+  top: clamp(280px, 34%, 500px);
+  right: 163px;
+  width: 32vw;
+  height: 52vh;
+}
+
+.mat-tab-body-wrapper, .mat-tab-body, .mat-tab-body-active, .mat-tab-label-container, .mat-tab-body-content {
+  overflow: initial !important;
+}
+
 .mat-tab-label {
   @include navText;
   color: $blue;
   line-height: 19.2px;
+  text-transform: uppercase;
   margin-right: 36px;
   padding: 0 !important;
   min-width: 0 !important;
@@ -41,4 +52,45 @@
 }
 .mat-ink-bar {
   background-color: $light !important;
+}
+.destinationImage {
+  position: absolute;
+  left: calc(-31vw - 11vw);
+  width: clamp(300px, 31vw, 500px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.destination h2 {
+  margin: 4vh 0 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 12.7vh;
+}
+.destination .description {
+  font-weight: 400;
+  font-size: clamp(15px, 2vh, 22px);
+  line-height: 32px;
+  color: $blue;
+  font-family: $fontText;
+  margin-bottom: 6vh;
+}
+.details {
+  display: flex;
+  padding-top: 28px;
+  border-top: 1px solid #383B4B;
+}
+.destination .distance {
+  margin-right: 18%;
+}
+.destination h6 {
+  @include subheading2;
+  line-height: 16.8px;
+  color: $blue;
+}
+.detailsItem {
+  @include subheading1;
+  font-size: 3vmin;
+  line-height: 32.09px;
+  text-transform: uppercase;
 }
