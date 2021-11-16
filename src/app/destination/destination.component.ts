@@ -24,7 +24,7 @@ export class DestinationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.DestinationItems);
+    this.DestinationItems;
   }
 
 }
