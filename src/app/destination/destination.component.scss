@@ -156,4 +156,73 @@
 //for mobiles
 @media screen and (max-width: 650px) {
 
+  .destination {
+    width: 100%;
+    height: clamp(850px, 100vh, 1500px);
+    background: url(../../assets/images/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .destination h5 {
+    top: 88px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7;
+    span {
+      margin-right: 18px;
+    }
+  }
+
+  .destinationImage {
+    width: 170px;
+    top: -235px;
+  }
+
+  .mat-tab-group {
+    width: 87vw;
+    right: 0;
+    top: 335px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+  }
+
+  .mat-tab-header {
+    width: 238px;
+    justify-content: center;
+  }
+
+  .mat-tab-label {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    line-height: 16.8px;
+    margin-right: 26px;
+  }
+
+  .destination h2 {
+    font-size: 56px;
+    line-height: 64.18px;
+    margin: 20px 0 1px;
+  }
+  .description {
+    max-width: 500px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+  .details {
+    flex-direction: column;
+    padding-top: 32px;
+    .distance {
+      margin-right: 0;
+    }
+    .detailsItem {
+      font-size: 28px;
+      margin: 12px 0 32px;
+    }
+  }
 }
