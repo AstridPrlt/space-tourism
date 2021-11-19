@@ -2,11 +2,11 @@
 
   <h5><span>01</span>pick your destination</h5>
 
-  <mat-tab-group mat-align-tabs="start" animationDuration="0ms">
+  <mat-tab-group class="matTabDestination" mat-align-tabs="start" animationDuration="0ms">
     <mat-tab *ngFor="let item of DestinationItems">
       <ng-template mat-tab-label>{{item.name}}</ng-template>
 
-      <img class="destinationImage" [src]="item.images" alt="">
+      <img class="destinationImage" [src]="item.images" alt="picture of a planet">
 
       <div class="destinationText">
         <h2>{{item.name}}</h2>
@@ -14,11 +14,11 @@
         <div class="details">
           <div class="distance">
             <h6>AVG. DISTANCE</h6>
-            <p class="detailsItem">{{item.distance}}</p>
+            <span class="detailsItem">{{item.distance}}</span>
           </div>
           <div class="travelTime">
             <h6>EST. TRAVEL TIME</h6>
-            <p class="detailsItem">{{item.travel}}</p>
+            <span class="detailsItem">{{item.travel}}</span>
           </div>
         </div>
       </div>

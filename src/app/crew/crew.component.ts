@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import DataJson from '../../assets/data.json';
+
+export interface CREWITEM {
+  name: string;
+  images: string;
+  role: string;
+  bio: string
+}
 
 @Component({
   selector: 'app-crew',
@@ -7,9 +15,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrewComponent implements OnInit {
 
+  CrewItems: CREWITEM[] = DataJson.crew;
+  crewPerson!: CREWITEM;
+  selectedIndex: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.crewPerson = DataJson.crew[0];
+  }
+
+  change(people: CREWITEM, i: number) {
+    this.crewPerson = people;
+    this.selectedIndex = i;
   }
 
 }

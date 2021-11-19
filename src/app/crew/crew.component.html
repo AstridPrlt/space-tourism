@@ -1,4 +1,49 @@
 <div class="crew">
 
+  <h5><span>01</span>meet your crew</h5>
+
+  <!-- <mat-tab-group class="matTabCrew" headerPosition="below" animationDuration="0ms">
+    <mat-tab *ngFor="let item of CrewItems">
+      <ng-template mat-tab-label>{{item.name}}</ng-template>
+
+      <div class="crewText">
+        <h4>{{item.role}}</h4>
+        <h3>{{item.name}}</h3>
+        <p class="crewDescription">{{item.bio}}</p>
+      </div>
+
+      <img class="crewImage" [src]="item.images" alt="picture of people from the crew">
+
+    </mat-tab>
+
+  </mat-tab-group> -->
+
+  <div class="tabCrew">
+
+    <div class="crewText">
+
+      <div class="crewDetails">
+        <h4 class="role">{{crewPerson.role}}</h4>
+        <h3>{{crewPerson.name}}</h3>
+        <p class="crewDescription">{{crewPerson.bio}}</p>
+      </div>
+
+
+      <div class="labelsCrew">
+        <div class="labelCrew"
+        [id]="CrewItems.indexOf(item)"
+        *ngFor="let item of CrewItems; let i = index"
+        (click)="change(item, i)">
+        <span [class.active]="selectedIndex === i"></span>
+        <!-- <input type="radio" name="change" [id]="CrewItems.indexOf(item)"> -->
+        </div>
+      </div>
+    </div>
+
+
+
+    <img class="crewImage" [src]="crewPerson.images" alt="picture of people from the crew">
+
+  </div>
 
 </div>

@@ -70,10 +70,12 @@ h2 {
 h3 {
   font-family: $fontTitles;
   font-size: 56px;
+  font-weight: 400;
 }
 h4 {
   font-family: $fontTitles;
   font-size: 32px;
+  font-weight: 400;
 }
 h5 {
   font-family: $fontText;
@@ -81,6 +83,14 @@ h5 {
   letter-spacing: 4.75px;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  font-size: clamp(15px, 2vh, 22px);
+  line-height: 32px;
+  color: $blue;
+  font-family: $fontText;
 }
 
 @mixin subheading1 {

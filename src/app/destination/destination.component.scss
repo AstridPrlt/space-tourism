@@ -31,7 +31,7 @@
   overflow: initial !important;
 }
 
-.mat-tab-label {
+.matTabDestination .mat-tab-label {
   @include navText;
   color: $blue;
   line-height: 19.2px;
@@ -43,11 +43,11 @@
     border-bottom: 3px solid $hover;
   }
 }
-.mat-tab-label:last-of-type {
+.matTabDestination .mat-tab-label:last-of-type {
   margin-right: 0;
 }
 
-.mat-tab-label-active {
+.matTabDestination .mat-tab-label-active {
   color: $light;
   &:hover {
     border-bottom: none;
@@ -71,11 +71,11 @@
   line-height: 12.7vh;
 }
 .destination .description {
-  font-weight: 400;
-  font-size: clamp(15px, 2vh, 22px);
-  line-height: 32px;
-  color: $blue;
-  font-family: $fontText;
+  // font-weight: 400;
+  // font-size: clamp(15px, 2vh, 22px);
+  // line-height: 32px;
+  // color: $blue;
+  // font-family: $fontText;
   margin-bottom: 6vh;
 }
 .details {
@@ -110,7 +110,7 @@
     background-repeat: no-repeat;
   }
 
-  .destination h5 {
+  .destination h5, .crew h5 {
     left: 5%;
     top: 136px;
     font-size: 20px;
@@ -140,7 +140,7 @@
     font-size: 80px;
     line-height: 92px;
   }
-  .description {
+  .destinationText .description {
     margin-bottom: 49px;
     font-size: 16px;
     line-height: 28px;
@@ -164,7 +164,7 @@
     background-repeat: no-repeat;
   }
 
-  .destination h5 {
+  .destination h5, .crew h5 {
     top: 88px;
     left: 0;
     width: 100%;
@@ -196,7 +196,7 @@
     justify-content: center;
   }
 
-  .mat-tab-label {
+  .matTabDestination .mat-tab-label {
     font-size: 14px;
     letter-spacing: 2.36px;
     line-height: 16.8px;
@@ -208,7 +208,7 @@
     line-height: 64.18px;
     margin: 20px 0 1px;
   }
-  .description {
+  .destinationText .description {
     max-width: 500px;
     line-height: 25px;
     font-size: 15px;

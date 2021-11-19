@@ -1,9 +1,126 @@
 @import '../../styles';
 
 .crew {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: clamp(750px, 100vh, 3000px);
   background: url(../../assets/images/crew/background-crew-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  position: relative;
+
+}
+
+.crew h5 {
+  position: absolute;
+  top: clamp(180px, 23vh, 400px);
+  left: 11.5%;
+
+  & span {
+    opacity: 0.25;
+    margin-right: 28px;
+  }
+}
+
+.tabCrew {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.crewText {
+  position: absolute;
+  top: 400px;
+  left: 11.5vw;
+  bottom: 0;
+}
+
+.crewDetails {
+  & h3 {
+    text-transform: uppercase;
+    margin: 1.6vh 0 3vh;
+    font-size: 4vw;
+  }
+  & h4 {
+    text-transform: uppercase;
+    line-height: 36.67px;
+    color: $hover;
+  }
+  & p {
+    width: 31vw;
+  }
+}
+
+.labelsCrew {
+  display: flex;
+  position: absolute;
+  bottom: 10vh;
+  .labelCrew {
+    list-style: none;
+    margin: 10px;
+
+    & span {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $hover;
+      &.active {
+        background-color: white;
+      }
+    }
+  }
+}
+
+.crewImage {
+  width: 40vw;
+  position: absolute;
+  bottom: 0;
+  left: 73%;
+  transform: translateX(-50%);
+}
+
+
+// .mat-tab-group {
+//   position: absolute;
+//   top: clamp(280px, 34%, 500px);
+//   left: 163px;
+//   width: 50vw;
+//   height: 52vh;
+// }
+
+// .mat-tab-body-wrapper, .mat-tab-body, .mat-tab-body-active, .mat-tab-label-container, .mat-tab-body-content {
+//   overflow: initial !important;
+// }
+
+// .crewImage {
+//   position: absolute;
+//   width: 568.07px;
+//   height: 712px;
+//   left: 100%;
+//   top: 0;
+// }
+
+
+
+//for tablets
+@media screen and (max-width: 1023px) {
+  .crew {
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/images/crew/background-crew-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+//for mobiles
+@media screen and (max-width: 650px) {
+  .crew {
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/images/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
