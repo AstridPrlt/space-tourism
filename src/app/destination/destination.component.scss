@@ -104,13 +104,15 @@
 
   .destination {
     width: 100%;
-    height: clamp(1024px, 100vh, 3000px);
+    min-height: 1024px;
+    // height: clamp(1024px, 100vh, 3000px);
     background: url(../../assets/images/destination/background-destination-tablet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
   }
 
-  .destination h5, .crew h5 {
+  .destination h5 {
     left: 5%;
     top: 136px;
     font-size: 20px;
