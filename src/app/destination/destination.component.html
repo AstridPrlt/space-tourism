@@ -2,7 +2,38 @@
 
   <h5><span>01</span>pick your destination</h5>
 
-  <mat-tab-group class="matTabDestination" mat-align-tabs="start" animationDuration="0ms">
+  <div class="tabDestination">
+
+    <img class="destinationImage" [src]="destination.images" alt="picture of a planet">
+
+    <div class="destinationText">
+
+      <div class="labelsDestination">
+        <div class="labelDestination"
+        [id]="DestinationItems.indexOf(item)"
+        *ngFor="let item of DestinationItems; let i = index"
+        (click)="changeDestination(item, i)">
+        <span [class.active]="selectedIndex === i">{{item.name}}</span>
+        </div>
+      </div>
+
+      <h2>{{destination.name}}</h2>
+      <p class="description">{{destination.description}}</p>
+      <div class="details">
+        <div class="distance">
+          <h6>AVG. DISTANCE</h6>
+          <span class="detailsItem">{{destination.distance}}</span>
+        </div>
+        <div class="travelTime">
+          <h6>EST. TRAVEL TIME</h6>
+          <span class="detailsItem">{{destination.travel}}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <mat-tab-group class="matTabDestination" mat-align-tabs="start" animationDuration="0ms">
     <mat-tab *ngFor="let item of DestinationItems">
       <ng-template mat-tab-label>{{item.name}}</ng-template>
 
@@ -24,6 +55,6 @@
       </div>
 
       </mat-tab>
-  </mat-tab-group>
+  </mat-tab-group> -->
 
 </div>

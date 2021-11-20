@@ -8,6 +8,17 @@
   background-repeat: no-repeat;
 }
 
+.tabDestination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52.5%;
+  position: absolute;
+  bottom: 13%;
+  padding: 0 11.5vw 0 16vw;
+}
+
 .destination h5 {
   position: absolute;
   top: clamp(180px, 23vh, 400px);
@@ -19,49 +30,34 @@
   }
 }
 
-.mat-tab-group {
-  position: absolute;
-  top: clamp(280px, 34%, 500px);
-  right: 163px;
-  width: 32vw;
-  height: 52vh;
+.destinationImage {
+  width: clamp(300px, 31vw, 500px);
 }
 
-.mat-tab-body-wrapper, .mat-tab-body, .mat-tab-body-active, .mat-tab-label-container, .mat-tab-body-content {
-  overflow: initial !important;
-}
-
-.matTabDestination .mat-tab-label {
+.labelsDestination {
+  display: flex;
+  .labelDestination {
   @include navText;
   color: $blue;
   line-height: 19.2px;
   text-transform: uppercase;
   margin-right: 36px;
-  padding: 0 !important;
-  min-width: 0 !important;
-  &:hover {
-    border-bottom: 3px solid $hover;
+
+  & span {
+    padding-bottom: 12px;
+    &:hover {
+      border-bottom: 3px solid $hover;
+    }
+    &.active {
+      color: $light;
+      border-bottom: 3px solid $light;
+    }
   }
-}
-.matTabDestination .mat-tab-label:last-of-type {
-  margin-right: 0;
+  }
 }
 
-.matTabDestination .mat-tab-label-active {
-  color: $light;
-  &:hover {
-    border-bottom: none;
-  }
-}
-.mat-ink-bar {
-  background-color: $light !important;
-}
-.destinationImage {
-  position: absolute;
-  left: -42vw;
-  width: clamp(300px, 31vw, 500px);
-  top: 50%;
-  transform: translateY(-50%);
+.destinationText {
+  width: 31vw;
 }
 
 .destination h2 {
@@ -71,11 +67,6 @@
   line-height: 12.7vh;
 }
 .destination .description {
-  // font-weight: 400;
-  // font-size: clamp(15px, 2vh, 22px);
-  // line-height: 32px;
-  // color: $blue;
-  // font-family: $fontText;
   margin-bottom: 6vh;
 }
 .details {
@@ -120,22 +111,34 @@
     letter-spacing: 3.38px;
   }
 
-  .destinationImage {
-    top: -385px;
+  .tabDestination {
+    width: 75vw;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+    padding: unset;
     left: 50%;
+    bottom: 6%;
+    top: 220px;
     transform: translateX(-50%);
   }
 
-  .mat-tab-group {
-    width: 75vw;
-    right: 0;
-    top: 550px;
-    left: 50%;
-    transform: translateX(-50%);
-    align-items: center;
+  .destinationImage {
+    left: 0;
+    margin-bottom: 10%;
+  }
+
+  .labelsDestination {
+    width: 37.5vw;
+    margin: auto;
+    justify-content: space-between;
+    .labelDestination {
+      margin-right: 0;
+    }
   }
   .destinationText {
     text-align: center;
+    width: 560px;
   }
   .destination h2 {
     margin: 32px 0 8px;
@@ -160,7 +163,8 @@
 
   .destination {
     width: 100%;
-    height: clamp(850px, 100vh, 1500px);
+    min-height: 850px;
+    // height: clamp(850px, 100vh, 1500px);
     background: url(../../assets/images/destination/background-destination-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -184,45 +188,46 @@
     top: -235px;
   }
 
-  .mat-tab-group {
+  .tabDestination {
     width: 87vw;
     right: 0;
-    top: 335px;
+    top: 139px;
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
   }
 
-  .mat-tab-header {
+  .labelsDestination {
     width: 238px;
-    justify-content: center;
-  }
-
-  .matTabDestination .mat-tab-label {
-    font-size: 14px;
-    letter-spacing: 2.36px;
-    line-height: 16.8px;
-    margin-right: 26px;
+    .labelDestination {
+      font-size: 14px;
+      letter-spacing: 2.36px;
+      line-height: 16.8px;
+    }
   }
 
   .destination h2 {
     font-size: 56px;
     line-height: 64.18px;
-    margin: 20px 0 1px;
+    margin: 30px 0 1px;
   }
   .destinationText .description {
-    max-width: 500px;
     line-height: 25px;
     font-size: 15px;
+    width: 87vw;
+    margin: 0 auto 10vw;
   }
 
   .details {
     flex-direction: column;
     padding-top: 32px;
+    width: 85vw;
+    margin: auto;
     .distance {
       margin-right: 0;
     }
-    .detailsItem {
+    div .detailsItem {
+      display: inline-block;
       font-size: 28px;
       margin: 12px 0 32px;
     }

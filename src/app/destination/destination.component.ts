@@ -20,11 +20,18 @@ interface DESTINATIONITEM {
 export class DestinationComponent implements OnInit {
 
   DestinationItems: DESTINATIONITEM[] = DataJson.destinations;
+  destination!: DESTINATIONITEM;
+  selectedIndex: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.DestinationItems;
+    this.destination = DataJson.destinations[0];
+  }
+
+  changeDestination(selectedDestination: DESTINATIONITEM, i: number) {
+    this.destination = selectedDestination;
+    this.selectedIndex = i;
   }
 
 }
