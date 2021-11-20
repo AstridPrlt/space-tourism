@@ -35,11 +35,9 @@
         *ngFor="let item of CrewItems; let i = index"
         (click)="change(item, i)">
         <span [class.active]="selectedIndex === i"></span>
-        <!-- <input type="radio" name="change" [id]="CrewItems.indexOf(item)"> -->
         </div>
       </div>
     </div>
-
 
 
     <img class="crewImage" [src]="crewPerson.images" alt="picture of people from the crew">
