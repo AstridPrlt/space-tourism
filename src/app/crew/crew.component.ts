@@ -25,7 +25,7 @@ export class CrewComponent implements OnInit {
     this.crewPerson = DataJson.crew[0];
   }
 
-  change(people: CREWITEM, i: number) {
+  changeCrewPerson(people: CREWITEM, i: number) {
     this.crewPerson = people;
     this.selectedIndex = i;
   }

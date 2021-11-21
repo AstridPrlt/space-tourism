@@ -7,3 +7,120 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.technology h5 {
+  position: absolute;
+  top: clamp(180px, 23vh, 400px);
+  left: 11.5%;
+
+  & span {
+    opacity: 0.25;
+    margin-right: 28px;
+  }
+}
+
+
+.technologyText {
+  width: 88.5vw;
+  height: 34%;
+  position: absolute;
+  top: 42.5%;
+  left: 11.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .technoImage img {
+    width: 36vw;
+  }
+
+  .labelsTechnology {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .labelTechnology {
+      & span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid rgba($color: white, $alpha: 0.25);
+        font-family: $fontTitles;
+        font-size: 32px;
+        line-height: 36.67px;
+        letter-spacing: 2px;
+        &.active {
+          background-color: $light;
+          color: black;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+
+  .technologyDetails {
+    width: 37%;
+    margin-right: 6%;
+    & span {
+      @include navText;
+      line-height: 19.2px;
+      color: $blue;
+    }
+    & h3 {
+      margin: 3.6% 0 5.6%;
+    }
+  }
+
+}
+
+
+//for tablets
+@media screen and (max-width: 1023px) {
+  .technology {
+    width: 100%;
+    min-height: 1024px;
+    background: url(../../assets/images/technology/background-technology-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .technology h5 {
+    left: 5%;
+    top: 136px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.38px;
+  }
+}
+
+
+//for mobiles
+@media screen and (max-width: 650px) {
+  .technology {
+    width: 100%;
+    min-height: 710px;
+    background: url(../../assets/images/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .technology h5 {
+    top: 88px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7;
+    span {
+      margin-right: 18px;
+    }
+  }
+}

@@ -1,4 +1,35 @@
 <div class="technology">
 
+  <h5><span>03</span>space launch 101</h5>
+
+  <div class="tabTechnology">
+
+    <div class="technologyText">
+
+      <div class="labelsTechnology">
+        <div class="labelTechnology"
+        [id]="TechnoItems.indexOf(item)"
+        *ngFor="let item of TechnoItems; let i = index"
+        (click)="changeTechno(item, i)">
+        <span [class.active]="selectedIndex === i">{{TechnoItems.indexOf(item)+1}}</span>
+        </div>
+      </div>
+
+      <div class="technologyDetails">
+        <span>THE TERMINOLOGY...</span>
+        <h3>{{technology.name}}</h3>
+        <p class="technologyDescription">{{technology.description}}</p>
+      </div>
+
+      <picture class="technoImage">
+        <source srcset={{technology.images.landscape}}
+                media="(max-width: 768px)">
+        <img src={{technology.images.portrait}} alt="picture of space vehicles">
+      </picture>
+    </div>
+
+
+  </div>
+
 
 </div>
