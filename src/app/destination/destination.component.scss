@@ -44,6 +44,7 @@
   margin-right: 36px;
 
   & span {
+    cursor: pointer;
     padding-bottom: 12px;
     &:hover {
       border-bottom: 3px solid $hover;
