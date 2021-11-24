@@ -10,8 +10,6 @@ import { CrewComponent } from './crew/crew.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatTabsModule} from '@angular/material/tabs';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +22,7 @@ import {MatTabsModule} from '@angular/material/tabs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTabsModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
