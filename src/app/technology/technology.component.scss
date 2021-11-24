@@ -2,7 +2,7 @@
 
 .technology {
   width: 100%;
-  min-height: 900px;
+  height: clamp(900px, 100vh, 3000px);
   background: url(../../assets/images/technology/background-technology-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
