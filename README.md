@@ -30,5 +30,5 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://astridprlt.github.io/space-tourism/)
+- Live Site URL: [https://astridprlt.github.io/space-tourism/]
 
