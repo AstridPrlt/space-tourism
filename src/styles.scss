@@ -110,3 +110,25 @@ p {
   letter-spacing: 2.7px;
 }
 
+@mixin h5PositionDesktop {
+  position: absolute;
+  top: clamp(180px, 23vh, 400px);
+  left: 11.5%;
+}
+@mixin h5PositionAndDesignTablet {
+  left: 5%;
+  top: 136px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.38px;
+}
+@mixin h5PositionAndDesignMobile {
+  top: 88px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7;
+}
+

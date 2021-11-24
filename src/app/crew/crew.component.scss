@@ -11,10 +11,7 @@
 }
 
 .crew h5 {
-  position: absolute;
-  top: clamp(180px, 23vh, 400px);
-  left: 11.5%;
-
+  @include h5PositionDesktop;
   & span {
     opacity: 0.25;
     margin-right: 28px;
@@ -96,11 +93,7 @@
   }
 
   .crew h5 {
-    left: 5%;
-    top: 136px;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 3.38px;
+    @include h5PositionAndDesignTablet;
   }
 
   .crewText {
@@ -155,13 +148,7 @@
   }
 
   .crew h5 {
-    top: 88px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7;
+    @include h5PositionAndDesignMobile;
     span {
       margin-right: 18px;
     }
