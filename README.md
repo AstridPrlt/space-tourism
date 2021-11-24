@@ -1,27 +1,34 @@
-# SpaceTourism
+# Frontend Mentor - Space tourism website solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+- [Built with](#built-with)
+- [The challenge](#the-challenge)
+- [Links](#links)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Built with
 
-## Build
+- [Angular](https://angular.io/) - JS framework
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- [Sass](https://sass-lang.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### The challenge
 
-## Running unit tests
+The challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Users should be able to:
 
-## Running end-to-end tests
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+### Links
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
