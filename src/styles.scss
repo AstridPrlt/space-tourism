@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-// html { height: 100%; }
+html {
+  font-size: 62.5%;
+}
 
 $dark: #0B0D17;
 $blue: #D0D6F9;
@@ -24,28 +26,28 @@ body {
 
 h1 {
   font-family: $fontTitles;
-  font-size: 150px;
+  font-size: 15rem;
   text-transform: uppercase;
   font-weight: 400;
 }
 h2 {
   font-family: $fontTitles;
-  font-size: 100px;
+  font-size: 10rem;
 }
 h3 {
   font-family: $fontTitles;
-  font-size: 56px;
+  font-size: 5.6rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 h4 {
   font-family: $fontTitles;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 400;
 }
 h5 {
   font-family: $fontText;
-  font-size: 28px;
+  font-size: 2.8rem;
   letter-spacing: 4.75px;
   text-transform: uppercase;
   font-weight: 400;
@@ -53,7 +55,7 @@ h5 {
 
 p {
   font-weight: 400;
-  font-size: clamp(15px, 2vh, 22px);
+  font-size: clamp(1.5rem, 2vh, 2.2rem);
   line-height: 32px;
   color: $blue;
   font-family: $fontText;
@@ -61,17 +63,17 @@ p {
 
 @mixin subheading1 {
   font-family: $fontTitles;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 @mixin subheading2 {
   font-family: $fontText;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 2.35px;
 }
 
 @mixin navText {
   font-family: $fontText;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 2.7px;
 }
 
@@ -83,7 +85,7 @@ p {
 @mixin h5PositionAndDesignTablet {
   left: 5%;
   top: 136px;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 24px;
   letter-spacing: 3.38px;
 }
@@ -92,7 +94,7 @@ p {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 19px;
   letter-spacing: 2.7;
 }
