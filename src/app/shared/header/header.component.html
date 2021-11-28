@@ -9,7 +9,7 @@
     <label for="menu"><span id="menu-icon"></span></label>
   <!-- </div> -->
   <nav>
-    <ul>
+    <ul (click)="hideMobileMenu()">
       <li routerLink="" routerLinkActive="router-link-active" [routerLinkActiveOptions]={exact:true}><span>00</span>home</li>
       <li routerLink="/destination" routerLinkActive="router-link-active"><span>01</span>destination</li>
       <li routerLink="/crew" routerLinkActive="router-link-active"><span>02</span>crew</li>

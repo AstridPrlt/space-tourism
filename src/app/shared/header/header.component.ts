@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hideMobileMenu() {
+    const menu = document.querySelector("input");
+    menu != null ? menu.checked = false : '';
+  }
+
 }
